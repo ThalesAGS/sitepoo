@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="codigo.css">
+</head>
+<body>
+	<div class="login" id="cadastro">
+ 	 <div class="login-triangle"></div>
+  
+  		<h2 class="login-header">Cadastro</h2>
+
+ 		 <form class="login-container">
+   	 		<p><input type="email" placeholder="Email" id="EmailCadastro"></p>
+    		<p><input type="password" placeholder="Senha" id ="SenhaCadastro"></p>
+    		<p><input type="password" placeholder="Confirmar senha" id ="SenhaCadastroConfirm"></p>
+			<p><input type="button" value="Cadastrar" onclick="cadastro()"></p>
+			<p><input type="button" value="Login" onclick="mostrar(1)"></p>
+  		</form>
+	</div>
+
+	<div class="invisivel" id="login-div">
+		<div class="login-triangle"></div>
+
+			<h2 class="login-header">Login</h2>
+
+			<form class="login-container">
+			  <p><input type="email" placeholder="Email" id="EmailLogin"></p>
+			  <p><input type="password" placeholder="Senha" id ="SenhaLogin"></p>
+			  <p><input type="button" value="Log in" onclick="login()"></p>
+			  <p><input type="button" value="Esqueci a senha"></p>
+			  <p><input type="button" value="Cadastrar-se" onclick="mostrar(2)"></p>
+			</form>
+  </div>
+  <script src="cadastro_generico.js"></script>
+</body>
+</html>
